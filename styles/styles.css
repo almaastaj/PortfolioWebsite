@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+    /* list-style: none; */
 }
 
 :root {
@@ -23,7 +23,7 @@
 
 .light-mode {
     --color-primary: #ffffff;
-    --color-secondary: #ff0000;
+    --color-secondary: #fc6736;
     --color-white: #454e56;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -64,6 +64,10 @@ section {
     left: 0;
     top: 0;
     padding: 3rem 18rem;
+}
+
+strong {
+    color: var(--color-secondary);
 }
 
 .container {
@@ -183,6 +187,7 @@ section {
     height: 100%;
     object-fit: cover;
     transition: all 0.4s ease-in-out;
+    border: 5px solid #555;
     filter: grayscale(100%);
 }
 .header-content .left-header .image img:hover {
@@ -279,6 +284,11 @@ section {
 .about-stats {
     padding-bottom: 2rem;
 }
+
+.skill-list {
+    font-size: 1.75rem;
+}
+
 .about-stats .progress-bars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -336,7 +346,7 @@ section {
 
 .stat-title {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     padding: 2rem 0;
     position: relative;
@@ -356,7 +366,7 @@ section {
 /*Timeline*/
 .timeline {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
     padding-bottom: 3rem;
 }
@@ -390,18 +400,19 @@ section {
     font-weight: 500;
 }
 .timeline .timeline-item h5 {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     text-transform: uppercase;
     font-size: 1.3rem;
     font-weight: 600;
 }
 .timeline .timeline-item h5 span {
-    color: var(--color-grey-2);
+    color: var(--color-secondary);
     font-weight: 500;
     font-size: 1.2rem;
 }
-.timeline .timeline-item p {
+.timeline .timeline-item ol {
     color: var(--color-grey-2);
+    list-style-type: disc;
 }
 
 .port-text {
