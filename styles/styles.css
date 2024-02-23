@@ -70,6 +70,16 @@ strong {
     color: var(--color-secondary);
 }
 
+a {
+    color: var(--color-white);
+    transition: font-size 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+}
+
 .container {
     display: none;
     transform: translateY(-100%) scale(0);
@@ -158,6 +168,14 @@ strong {
     grid-template-columns: repeat(2, 1fr);
     min-height: 100vh;
 }
+
+.profile-links {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute space evenly */
+    width: 80%;
+    padding-left: 20%;
+}
+
 .header-content .left-header {
     display: flex;
     align-items: center;
@@ -370,6 +388,7 @@ strong {
     grid-gap: 2rem;
     padding-bottom: 3rem;
 }
+
 .timeline .timeline-item {
     position: relative;
     padding-left: 3rem;
