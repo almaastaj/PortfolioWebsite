@@ -439,9 +439,28 @@ a:hover {
     text-align: center;
 }
 
+.project-title {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-content: center; /* vertically center */
+    font-size: 2rem;
+    padding-top: 2%;
+}
+
+.project-desc {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 1.2rem;
+}
+
 .portfolios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
 }
