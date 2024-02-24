@@ -535,6 +535,12 @@ a:hover {
     grid-gap: 2rem;
     margin-top: 3rem;
 }
+
+.verification-link {
+    display: flex;
+    justify-content: center;
+}
+
 .blogs .blog {
     position: relative;
     background-color: var(--color-grey-5);
